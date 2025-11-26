@@ -1,29 +1,30 @@
 # Christmas Elf Name Generator
 
-This repository now contains a minimal Blazor WebAssembly app scaffold under `src/ChristmasElfNameGenerator.Client`.
+This repository contains a **Blazor WebAssembly** app that generates random elf names. It's designed to deploy as a static site to Azure Static Web Apps (or any static hosting).
 
-Run the WebAssembly app locally:
+## Run Locally
 
 ```bash
 cd src/ChristmasElfNameGenerator.Client
 dotnet run
 ```
 
-By default the app will report the URL(s) to browse (for example `https://localhost:5001`).
+Open the URL reported by `dotnet run` (typically https://localhost:5001).
 
-What I added:
+## GitHub Actions Workflow
 
-- A Blazor WebAssembly project at `src/ChristmasElfNameGenerator.Client` (`.csproj`, `Program.cs`).
-- A simple UI (`Pages/Index.razor`) that generates a random elf name.
-- Shared layout and basic CSS under `Shared/` and `wwwroot/css/app.css`.
+The `.github/workflows/azure-static-web-apps-thankful-stone-0d7286710.yml` workflow:
+1. Sets up .NET 8
+2. Runs `dotnet publish -c Release -o publish_output`
+3. Uploads `publish_output/wwwroot` to Azure Static Web Apps
 
-If you previously relied on a static `index.html` in `wwwroot` for CI/CD, this WebAssembly project includes `wwwroot/index.html` so your workflow should find a default file.
+The workflow is configured to find `index.html` in the `publish_output/wwwroot` directory.
 
-Next steps I can do for you (pick one):
+## Project Structure
 
-- Create a solution file and VS Code launch/tasks.
-- Add a small CI workflow that runs `dotnet publish` and uploads the `publish/wwwroot` artifacts.
-- Convert to a hosted (server + client) Blazor model.
-
-Which of the above would you like next?
+- `src/ChristmasElfNameGenerator.Client/` — Blazor WebAssembly project
+  - `Pages/Index.razor` — Main elf-name generator UI
+  - `Shared/MainLayout.razor`, `NavMenu.razor` — Layout components
+  - `wwwroot/index.html` — Entry point (static)
+  - `wwwroot/css/app.css` — Styles
 # ChristmasElfNameGenerator
