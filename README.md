@@ -1,11 +1,11 @@
 # Christmas Elf Name Generator
 
-This repository contains a minimal Blazor Server app scaffold under `src/ChristmasElfNameGenerator.Server`.
+This repository now contains a minimal Blazor WebAssembly app scaffold under `src/ChristmasElfNameGenerator.Client`.
 
-Run the app locally:
+Run the WebAssembly app locally:
 
 ```bash
-cd src/ChristmasElfNameGenerator.Server
+cd src/ChristmasElfNameGenerator.Client
 dotnet run
 ```
 
@@ -13,15 +13,17 @@ By default the app will report the URL(s) to browse (for example `https://localh
 
 What I added:
 
-- A Blazor Server project at `src/ChristmasElfNameGenerator.Server` (`.csproj`, `Program.cs`).
+- A Blazor WebAssembly project at `src/ChristmasElfNameGenerator.Client` (`.csproj`, `Program.cs`).
 - A simple UI (`Pages/Index.razor`) that generates a random elf name.
 - Shared layout and basic CSS under `Shared/` and `wwwroot/css/app.css`.
 
-Next steps I can do for you (ask to pick any):
+If you previously relied on a static `index.html` in `wwwroot` for CI/CD, this WebAssembly project includes `wwwroot/index.html` so your workflow should find a default file.
 
-- Add a unit/integration test project.
-- Create a solution file and VS Code launch tasks.
-- Scaffold a Blazor WebAssembly client instead.
+Next steps I can do for you (pick one):
 
-Happy to continue — tell me which of the above you'd like next.
+- Create a solution file and VS Code launch/tasks.
+- Add a small CI workflow that runs `dotnet publish` and uploads the `publish/wwwroot` artifacts.
+- Convert to a hosted (server + client) Blazor model.
+
+Which of the above would you like next?
 # ChristmasElfNameGenerator
