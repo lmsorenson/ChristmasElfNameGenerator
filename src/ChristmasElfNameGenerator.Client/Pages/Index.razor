@@ -10,7 +10,21 @@
     <div class="elf-name">@currentName</div>
 }
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="form-embed">
+    <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true"
+        loading="lazy"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Feedback form">
+    </iframe>
+</div>
+
+<p class="form-mobile-link">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform"
+       target="_blank" rel="noopener">Open the form in a new tab (recommended on small screens)</a>
+</p>
 
 @code {
     private string currentName = string.Empty;
