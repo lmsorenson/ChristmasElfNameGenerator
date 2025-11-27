@@ -5,13 +5,13 @@
 
     @if (!string.IsNullOrEmpty(currentName))
     {
-        <h3>Your Elf Name:</h3>
+        <h3 class='elf-name-heading'>Your Elf Name:</h3>
         <div class="elf-name">@currentName</div>
     }
     else
     {
-        <h3>No elf name generated yet.</h3>
-        <div class="elf-name">@currentName</div>
+        <h3 class='elf-name-heading'>Your Elf Name:</h3>
+        <div class="elf-name">No elf name generated yet.</div>
     }
 
     <button class="btn" @onclick="Generate">Generate Elf Name</button>
