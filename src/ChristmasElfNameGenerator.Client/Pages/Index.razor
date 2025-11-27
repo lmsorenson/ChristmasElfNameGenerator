@@ -1,25 +1,33 @@
 @page "/"
 
-<p class="lead">Click the button to get your elf name.</p>
+<div class="generator">
+    <p class="lead">Click the button to get your elf name.</p>
 
-<button class="btn" @onclick="Generate">Generate Elf Name</button>
+    <button class="btn" @onclick="Generate">Generate Elf Name</button>
 
-@if (!string.IsNullOrEmpty(currentName))
-{
-    <h3>Your Elf Name:</h3>
-    <div class="elf-name">@currentName</div>
-}
+    @if (!string.IsNullOrEmpty(currentName))
+    {
+        <h3>Your Elf Name:</h3>
+        <div class="elf-name">@currentName</div>
+    }
+    else
+    {
+        <h3>No elf name generated yet.</h3>
+        <div class="elf-name">@currentName</div>
+    }
 
-<div class="form-embed expanded">
-    <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true"
-        scrolling="no"
-        loading="lazy"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Feedback form">
-    </iframe>
+
+    <div class="form-embed expanded">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true"
+            scrolling="no"
+            loading="lazy"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Feedback form">
+        </iframe>
+    </div>
 </div>
 
 @code {
