@@ -10,11 +10,7 @@
     <div class="elf-name">@currentName</div>
 }
 
-<div class="form-controls">
-    <button class="btn" @onclick="ToggleExpand">@(isExpanded ? "Collapse form" : "Show whole form")</button>
-</div>
-
-<div class="form-embed @(isExpanded ? "expanded" : "")">
+<div class="form-embed expanded">
     <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true"
         scrolling="no"
@@ -158,10 +154,5 @@
         currentName = $"{first[rng.Next(first.Length)]} {last[rng.Next(last.Length)]}";
     }
 
-    private bool isExpanded = false;
-
-    private void ToggleExpand()
-    {
-        isExpanded = !isExpanded;
-    }
+    // iframe is always expanded to show full form inline
 }
