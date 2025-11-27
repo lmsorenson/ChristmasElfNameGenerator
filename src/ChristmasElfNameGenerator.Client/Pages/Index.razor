@@ -10,7 +10,11 @@
     <div class="elf-name">@currentName</div>
 }
 
-<div class="form-embed">
+<div class="form-controls">
+    <button class="btn" @onclick="ToggleExpand">@(isExpanded ? "Collapse form" : "Show whole form")</button>
+</div>
+
+<div class="form-embed @(isExpanded ? "expanded" : "")">
     <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true"
         scrolling="no"
@@ -21,11 +25,6 @@
         title="Feedback form">
     </iframe>
 </div>
-
-<p class="form-mobile-link">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform"
-       target="_blank" rel="noopener">Open the form in a new tab (recommended on small screens)</a>
-</p>
 
 @code {
     private string currentName = string.Empty;
@@ -59,5 +58,12 @@
     private void Generate()
     {
         currentName = $"{first[rng.Next(first.Length)]} {last[rng.Next(last.Length)]}";
+    }
+
+    private bool isExpanded = false;
+
+    private void ToggleExpand()
+    {
+        isExpanded = !isExpanded;
     }
 }

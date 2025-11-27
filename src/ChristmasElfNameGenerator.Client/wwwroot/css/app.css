@@ -22,3 +22,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	.form-embed iframe { height: 60vh; min-height: 420px; }
 	.form-mobile-link { text-align: center; margin-top: 0.5rem; }
 }
+
+/* Expanded: make the iframe extremely tall so the full form is visible inline
+	 (the page will scroll instead of the iframe) */
+.form-embed.expanded iframe {
+	height: 12000px;
+	min-height: 1600px;
+	max-height: none;
+}
