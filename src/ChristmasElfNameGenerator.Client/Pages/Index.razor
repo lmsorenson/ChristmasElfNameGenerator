@@ -10,13 +10,35 @@
     <div class="elf-name">@currentName</div>
 }
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFsrG9LFmkUbHOVNSA9-8Soeu1rskxoDSQ9KVI0SkhxaMqMg/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVvfbEO3pV_6WqBFnv8yhCu4-kXWu1Nv7uFne6lK_VdIHiUg/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 @code {
     private string currentName = string.Empty;
 
-    private static readonly string[] first = new[] { "Jingle", "Sparkle", "Frosty", "Candy", "Merry", "Tinsel", "Snow", "Peppermint", "Holly", "Bells" };
-    private static readonly string[] last = new[] { "McTwinkle", "Sugarplum", "Brightboots", "Northstar", "Bumbles", "Snowflake", "Goodcheer", "Stocking", "Candycane", "Evergreen" };
+    private static readonly string[] first = new[] { 
+        "Jingle", 
+        "Sparkle", 
+        "Frosty", 
+        "Candy", 
+        "Merry", 
+        "Tinsel", 
+        "Snow", 
+        "Peppermint", 
+        "Holly", 
+        "Bells" 
+        };
+    private static readonly string[] last = new[] {
+         "McTwinkle", 
+         "Sugarplum", 
+         "Brightboots", 
+         "Northstar", 
+         "Bumbles", 
+         "Snowflake", 
+         "Goodcheer", 
+         "Stocking", 
+         "Candycane", 
+         "Evergreen" 
+         };
     private readonly Random rng = new();
 
     private void Generate()
