@@ -3,8 +3,6 @@
 <div class="generator">
     <p class="lead">Click the button to get your elf name.</p>
 
-    <button class="btn" @onclick="Generate">Generate Elf Name</button>
-
     @if (!string.IsNullOrEmpty(currentName))
     {
         <h3>Your Elf Name:</h3>
@@ -15,6 +13,8 @@
         <h3>No elf name generated yet.</h3>
         <div class="elf-name">@currentName</div>
     }
+
+    <button class="btn" @onclick="Generate">Generate Elf Name</button>
 </div>
 
 <div class="form-embed expanded">
