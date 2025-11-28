@@ -2,7 +2,6 @@
 @using System.Threading.Tasks
 
 <div class="generator">
-    <p class="lead">Click the button to get your elf name.</p>
 
     @if (!string.IsNullOrEmpty(currentName))
     {
@@ -15,6 +14,7 @@
         <div class="elf-name">No elf name generated yet.</div>
     }
 
+    <p class="lead">Click the button to get your elf name.</p>
     <button class="btn" @onclick="Generate">Generate Elf Name</button>
 </div>
 
