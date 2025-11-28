@@ -131,7 +131,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 	height: 1vh; /* increase height so content rarely needs internal scrolling */
-	min-height: 540px;
+	min-height: 300px;
 	max-height: 500px;
 }
 
@@ -145,6 +145,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	 (the page will scroll instead of the iframe) */
 .form-embed.expanded iframe {
 	height: 200px;
-	min-height: 1600px;
+	min-height: 300px;
 	max-height: none;
 }
