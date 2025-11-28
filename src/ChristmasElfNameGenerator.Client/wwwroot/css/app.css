@@ -130,14 +130,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	/* Hide scrollbars on the iframe element */
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
-	height: 10vh; /* increase height so content rarely needs internal scrolling */
+	height: 5vh; /* increase height so content rarely needs internal scrolling */
 	min-height: 540px;
 	max-height: 500px;
 }
 
 /* On narrow phones prefer opening in new tab; keep embed usable */
 @media (max-width: 420px) {
-	.form-embed iframe { height: 10vh; min-height: 420px; }
+	.form-embed iframe { height: 5vh; min-height: 420px; }
 	.form-mobile-link { text-align: center; margin-top: 0.5rem; }
 }
 
