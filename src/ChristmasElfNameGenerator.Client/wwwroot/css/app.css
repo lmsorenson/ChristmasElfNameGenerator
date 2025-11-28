@@ -145,6 +145,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	 (the page will scroll instead of the iframe) */
 .form-embed.expanded iframe {
 	height: 200px;
-	min-height: 300px;
+	min-height: 600px;
 	max-height: none;
 }
