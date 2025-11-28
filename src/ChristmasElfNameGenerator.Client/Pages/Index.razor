@@ -160,8 +160,12 @@
 
     private async Task Generate()
     {
-        currentName = "...";
-        await Task.Delay(3000); // simulate thinking time
+        for (int i = 0; i < 9; i++)
+        {
+            currentName = new string('.', i % 3);
+            await Task.Delay(300);
+        }
+        
         currentName = $"{first[rng.Next(first.Length)]} {last[rng.Next(last.Length)]}";
     }
 
