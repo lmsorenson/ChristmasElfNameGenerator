@@ -1,4 +1,5 @@
 @page "/"
+@using System.Threading.Tasks
 
 <div class="generator">
     <p class="lead">Click the button to get your elf name.</p>
@@ -157,8 +158,10 @@
     };
     private readonly Random rng = new();
 
-    private void Generate()
+    private async Task Generate()
     {
+        currentName = "...";
+        await Task.Delay(3000); // simulate thinking time
         currentName = $"{first[rng.Next(first.Length)]} {last[rng.Next(last.Length)]}";
     }
 
