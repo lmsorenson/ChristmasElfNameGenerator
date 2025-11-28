@@ -160,10 +160,10 @@
 
     private async Task Generate()
     {
-        for (int i = 0; i < 9; i++)
+        for (int i = 1; i <= 9; i++)
         {
-            currentName = new string('.', i % 3);
-            await Task.Delay(300);
+            currentName = new string('*', (i % 3));
+            await Task.Delay(333);
         }
         
         currentName = $"{first[rng.Next(first.Length)]} {last[rng.Next(last.Length)]}";
