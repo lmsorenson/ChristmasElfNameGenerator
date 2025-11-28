@@ -80,7 +80,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	color: #fff;
 	border: 6px solid rgba(200,130,60,0.98);
 	padding: 14px 28px;
-	font-size: 1.05rem;
+    font-family: 'Cinzel', serif;
+	font-size: 1.25rem;
 	font-weight: 700;
 	cursor: pointer;
 	border-radius: 14px;
@@ -100,7 +101,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	outline: none;
 	box-shadow: 0 0 0 10px rgba(245,170,80,0.14);
 }
-.elf-name-heading { font-family: 'Cinzel'; font-size: 1.25rem; margin-top: 8px; font-weight: 600; text-align: center; }
+.elf-name-heading { font-family: 'Cinzel'; font-size: 1.25rem; color: rgb(190,80,55);  margin-top: 8px; font-weight: 700; text-align: center; }
 .elf-name { font-family: 'Mountains of Christmas'; font-size: 2.5rem; margin-top: 8px; font-weight: 600; text-align: center; min-height: 125px; }
 
 /* Decorative lead text */
