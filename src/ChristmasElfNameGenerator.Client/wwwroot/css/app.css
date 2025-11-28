@@ -88,8 +88,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 	text-shadow: 0 1px 0 rgba(0,0,0,0.18);
 	transition: transform .12s ease, box-shadow .16s ease, filter .12s ease;
 	-webkit-tap-highlight-color: transparent;
-	display: inline-block;
-	margin: 18px auto;
+	display: block;
+	margin: 0 auto;
     align-self: center;
 }
 .btn:hover {
