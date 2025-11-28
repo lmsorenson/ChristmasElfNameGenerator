@@ -144,7 +144,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 /* Expanded: make the iframe extremely tall so the full form is visible inline
 	 (the page will scroll instead of the iframe) */
 .form-embed.expanded iframe {
-	height: 1200px;
+	height: 600px;
 	min-height: 1600px;
 	max-height: none;
 }
